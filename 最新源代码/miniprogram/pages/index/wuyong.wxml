@@ -1,0 +1,9 @@
+
+
+<!-- 商家类型选择 -- >
+<view class="inputView">
+  <text name="zhonglei" bindtap="showPopup">{{ zhonglei }}</text>
+</view>
+  <van-popup show="{{ show }}" round position="bottom" custom-style="height: 20%" bind: close="onClose">
+    <van-picker columns="{{ columns }}" bind: change="zhongleiChange" />
+  </van-popup>

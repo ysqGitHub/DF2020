@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<view class="index-style">
+  <view class='container'>
+    <!--1、轮播图 -->
+    <swiper class='swiper-container' indicator-dots="{{indicatorDots}}" indicator-active-color='#fff' autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <block wx:for="{{banners}}" wx:key="">
+        <!--控制属性绑定一个数组，即可使用数组中各项的数据重复渲染该组件。 -->
+        <swiper-item class='swiper-item'>
+          <image class='swiper-img' src="{{item.image}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <!--2、主题栏 -->
+
+  <view class='theme-container'>
+    <block wx:for="{{themes}}" wx:key="index">
+      <view class='theme-box' data-themeType="{{item.theme_type}}">
+        <view class='theme-icon'>
+          <image src='{{item.theme_icon}}' bindtap='newUrl' data-newthemename="{{item.theme_name}}"></image>
+        </view>
+        <text>{{item.theme_name}}</text>
+      </view>
+    </block>
+  </view>
+
+
+  <!--3、商家列表 -->
+
+  <view class='shangpins-latest-container'>
+    <!-- 使用  wx:for-item来识别当前下标 -->
+    <block wx:for="{{shangjiaList}}" wx:for-item="item">
+      <!-- 如果当前下标为 美食 就显示全部，也就是将这个数据发送给商家列表显示组件 -->
+      <view wx:if="{{nowshangjia=='美食'}}">
+        <shangjiaList list="{{item}}"></shangjiaList>
+        <!-- shangpin="{{item}}", shangpin 对应 behaviors 中的属性名 -->
+      </view>
+      <!-- 如果当前下标不是 美食 就，判断当前种类，如果符合就将这个数据发送给商家列表显示组件 -->
+      <view wx:elif="{{item.shangjia_leixing==nowshangjia}}">
+        <shangjiaList list="{{item}}"></shangjiaList>
+        <!-- shangpin="{{item}}", shangpin 对应 behaviors 中的属性名 -->
+      </view>
+    </block>
+  </view>
+</view>

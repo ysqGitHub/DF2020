@@ -1,0 +1,35 @@
+/* pages/shangchuan/shangchuan.wxss */
+
+.top {
+  margin-top: 40%;
+}
+
+.inputView {
+  margin: 40rpx 20rpx 0rpx 20rpx;
+  border: 2rpx solid rgb(168, 165, 165);
+  border-radius: 40rpx;
+  height: 80rpx;
+}
+
+input {
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  height: 80rpx;
+}
+
+.ph {
+  color: rgb(168, 165, 165);
+  font-size: 0.875em;
+}
+
+button {
+  margin: 40rpx 20rpx 0 20rpx;
+  border-radius: 40rpx;
+}
+
+text {
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  height: 80rpx;
+  color: rgb(128, 127, 127);
+}

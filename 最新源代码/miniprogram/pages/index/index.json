@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "shangjiaList": "../../components/shangjia-list/shangjia-list"
+  }
+}

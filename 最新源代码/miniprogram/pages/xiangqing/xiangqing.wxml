@@ -1,0 +1,18 @@
+<!--pages/xiangqing/xiangqing.wxml-->
+
+<!-- 商品列表 -->
+
+<scroll-view style="height: 1300rpx;" scroll-y="true">
+  <biaotilan-zujian title='最新上线'></biaotilan-zujian>
+  <!-- title="最新上线" 中 title 对应组件 properties 中的属性名 -->
+  <block wx:for="{{shangpins}}" wx:key="key">
+    <view wx:if="{{item._openid == openid}}">
+      <shangpin-xinxi-zujian list="{{item}}"></shangpin-xinxi-zujian>
+      <!-- shangpin="{{item}}", shangpin 对应 behaviors 中的属性名 -->
+    </view>
+  </block>
+</scroll-view>
+
+<van-submit-bar price="{{ zongjia }}" decimal-length='2' button-text="提交订单" bind:submit="onSubmit">
+  <van-icon name="cart" color="green" size="30px" dot info="{{count}}" />
+</van-submit-bar>

@@ -1,0 +1,13 @@
+<!--components/shangpin-xinxi/index.wxml-->
+
+
+<van-card num="{{num}}" tag="爆款" origin-price="{{list.shangpin_shichangjia}}" price="{{list.shangpin_youhuijia}}" title="{{list.shangpin_mingzi}}" thumb="{{list.shangpin_tupian_lujing}}">
+  <!-- 商品加减 -->
+  <view slot="footer">
+    <!-- 减号 -->
+    <van-button size="mini" data-name='{{list.shangpin_mingzi}}' data-id='{{list._id}}' data-shichangjia='{{list.shangpin_shichangjia}}' data-youhuijia='{{list.shangpin_youhuijia}}' bindtap="delCount">
+      移除购物车</van-button>
+    <!-- 加号 -->
+    <van-button size="mini" data-name='{{list.shangpin_mingzi}}' data-id='{{list._id}}' data-shichangjia='{{list.shangpin_shichangjia}}' data-youhuijia='{{list.shangpin_youhuijia}}' bindtap="addCount">加入购物车</van-button>
+  </view>
+</van-card>

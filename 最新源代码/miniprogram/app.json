@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cart/cart",
+    "pages/my/my",
+    "pages/xiangqing/xiangqing",
+    "pages/xuanfuchuang/xuanfuchuang",
+    "pages/shangchuan/shangchuan"
+  ],
+
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "DF智慧餐厅",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7F8389",
+    "selectedColor": "#FF6200",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "miniprogram_npm/images/tabBar/syb.png",
+        "selectedIconPath": "miniprogram_npm/images/tabBar/syh.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/shangchuan/shangchuan",
+        "iconPath": "miniprogram_npm/images/tabBar/gwcb.png",
+        "selectedIconPath": "miniprogram_npm/images/tabBar/gwch.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "miniprogram_npm/images/tabBar/yhb.png",
+        "selectedIconPath": "miniprogram_npm/images/tabBar/yhh.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

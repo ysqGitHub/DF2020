@@ -1,0 +1,62 @@
+/* components/shangjia-list/shangjia-list.wxss */
+
+/* 容器盒子 */
+.container{
+  display: inline-flex;
+  width:100%;
+  margin-left: 32rpx;
+  border-bottom:2rpx solid rgba(220,220,220,1);
+  background:#fff;
+}
+/* 展示商家左边布局 */
+.shangjia-left{
+  margin: 34rpx 0 30rpx 0;
+}
+.shangjia-img image{
+  width:180rpx;
+  height:180rpx;
+  border-radius:10px;
+}
+/* 商家右边部分显示 */
+.shangjia-right{
+  width: 100%;
+  height:180rpx;
+  margin:34rpx 0 0 30rpx;
+  display: inline-flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+/* 商家名 */
+.shangjia-title{
+  font-size:30rpx;
+  font-weight:400;
+  color:#161514;
+}
+/* 简介样式 */
+.market-price-container{
+  margin-bottom: -10rpx;
+}
+.market-price-container text{
+  height:23rpx;
+  font-size:24rpx;
+  font-weight:400;
+  color:#9B9B9B;
+ 
+}
+/* 分割线 */
+.dividing-line{
+  width:750rpx;
+  height:22rpx;
+  background:rgba(249,249,249,1);
+}
+/* 最新上线 */
+.shangjias-latest-container{
+  width: 750rpx;
+}
+
+
+ 
+.go{  
+  background:red;
+  color: #fff; 
+}

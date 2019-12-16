@@ -1,0 +1,22 @@
+<!--pages/shangchuan/shangchuan.wxml-->
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+
+  <view class="inputView">
+    <input name="mingzi" placeholder="商品名" />
+  </view>
+
+  <view class="inputView">
+    <input name="jianjie" placeholder="简介" />
+  </view>
+
+  <view class="inputView">
+    <input type="digit" name="shichangjia" placeholder="市场价" />
+  </view>
+
+  <view class="inputView">
+    <input type="digit" name="youhuijia" placeholder="优惠价" />
+  </view>
+
+  <button type="primary" formType="submit">提交</button>
+</form>

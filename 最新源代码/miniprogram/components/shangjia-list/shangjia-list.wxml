@@ -1,0 +1,16 @@
+<!--components/shangjia-list/shangjia-list.wxml-->
+<!-- 商家展示左右分隔 shangjia-left shangjia-left shangjia-right  -->
+
+<van-card 
+
+thumb="{{ list.shangjia_touxiang}}" 
+tag="{{list.shangjia_leixing}}" 
+title="{{list.shangjia_mingzi}}" 
+desc="简介：{{list.shangjia_jianjie}} 手机：{{list.yonghu_shoujihao}}" 
+>
+
+<view slot="footer">
+
+    <van-button data-id='{{list._openid}}' bindtap='xiangqing' size="mini">详情</van-button>
+  </view>
+</van-card>
